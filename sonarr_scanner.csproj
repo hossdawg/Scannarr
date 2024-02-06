@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-    <StartupObject>sonarr_scanner.Program</StartupObject>
+    <StartupObject>arr_scanner.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
