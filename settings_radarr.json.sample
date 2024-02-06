@@ -1,5 +1,5 @@
 {
-  "URL": "http://localhost:7878",
+  "URL": "http://radarr:7878",
   "Interval": 1440,
   "ScanOnWake": true,
   "ScanOnInterval": false,
