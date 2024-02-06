@@ -14,7 +14,7 @@ To start using it, you just need to configure **'settings_sonarr.json'** and/or 
 ### settings_sonarr.json
 ```
 {
-  "URL": "http://localhost:8989",
+  "URL": "http://sonarr:8989",
   "Interval": 120,
   "ScanOnWake": true,
   "ScanOnInterval": false,
@@ -30,7 +30,19 @@ _Valid options for **ForceImportMode**: "Copy" or "Move"_
 ### settings_radarr.json
 ```
 {
-  "URL": "http://localhost:7878",
+  "URL": "http://radarr:7878",
+  "Interval": 1440,
+  "ScanOnWake": true,
+  "ScanOnInterval": false,
+  "ScanOnStart": true,
+  "APIKey": ""
+}
+```
+
+### settings_4kradarr.json
+```
+{
+  "URL": "http://4kradarr:7878",
   "Interval": 1440,
   "ScanOnWake": true,
   "ScanOnInterval": false,
