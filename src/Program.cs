@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace sonarr_scanner
+namespace arr_scanner
 {
     class Program
     {
@@ -25,7 +25,10 @@ namespace sonarr_scanner
 
             monitors.Add(new Monitor(Settings.Sonarr, cancellationTokenSource.Token));
             monitors.Add(new Monitor(Settings.Radarr, cancellationTokenSource.Token));
-
+            monitors.Add(new Monitor(Settings.4kSonarr, cancellationTokenSource.Token));
+            monitors.Add(new Monitor(Settings.4kRadarr, cancellationTokenSource.Token));
+            monitors.Add(new Monitor(Settings.3dRadarr, cancellationTokenSource.Token));
+            
             var anyTrue = false;
             foreach (var monitor in monitors)
             {
