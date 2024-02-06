@@ -1,0 +1,8 @@
+{
+  "URL": "http://3dradarr:7878",
+  "Interval": 1440,
+  "ScanOnWake": true,
+  "ScanOnInterval": false,
+  "ScanOnStart": true,
+  "APIKey": ""
+}
