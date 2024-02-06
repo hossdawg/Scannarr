@@ -9,12 +9,26 @@ The software was completly rewritten to .NET Core (cross platform)
 
 ## Settings 
 
-To start using it, you just need to configure **'settings_sonarr.json'** and/or **'settings_radarr.json'**, make sure to put the correect API Key.  
+To start using it, you need to configure all instances you will be using, make sure to put the correct API Key.  
 
 ### settings_sonarr.json
 ```
 {
   "URL": "http://sonarr:8989",
+  "Interval": 120,
+  "ScanOnWake": true,
+  "ScanOnInterval": false,
+  "ScanOnStart": true,  
+  "ForceImport": false,
+  "ForceImportInterval": 1,
+  "ForceImportMode": "Copy",
+  "APIKey": ""
+}
+```
+### settings_4ksonarr.json
+```
+{
+  "URL": "http://4ksonarr:8989",
   "Interval": 120,
   "ScanOnWake": true,
   "ScanOnInterval": false,
@@ -43,6 +57,17 @@ _Valid options for **ForceImportMode**: "Copy" or "Move"_
 ```
 {
   "URL": "http://4kradarr:7878",
+  "Interval": 1440,
+  "ScanOnWake": true,
+  "ScanOnInterval": false,
+  "ScanOnStart": true,
+  "APIKey": ""
+}
+```
+### settings_3dradarr.json
+```
+{
+  "URL": "http://3dradarr:7878",
   "Interval": 1440,
   "ScanOnWake": true,
   "ScanOnInterval": false,
