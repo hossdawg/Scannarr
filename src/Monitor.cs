@@ -124,7 +124,7 @@ namespace arr_scanner
 
         private void ForceImport()
         {
-            if (Settings.Provider() == Settings.NAME_RADAR) { return;} // not implemented yet to radarr
+            if (Settings.Provider() == Settings.NAME_RADARR) { return;} // not implemented yet to radarr
             
             var rawJson = Get($"/api/v3/queue?sort_by=timeleft&order=asc&apikey={Settings.APIKey}");
             dynamic queues = JArray.Parse(rawJson);
