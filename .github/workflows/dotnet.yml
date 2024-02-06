@@ -53,10 +53,10 @@ jobs:
     - name: Prepare
       run: |
         cp .\settings_radarr.json.sample .\dist\win_x64\settings_radarr.json
-        cp .\settings_radarr.json.sample .\dist\win_x64\settings_radarr4k.json
-        cp .\settings_radarr.json.sample .\dist\win_x64\settings_radarr3d.json
+        cp .\settings_4kradarr.json.sample .\dist\win_x64\settings_4kradarr.json
+        cp .\settings_3dradarr.json.sample .\dist\win_x64\settings_3dradarr.json
         cp .\settings_sonarr.json.sample .\dist\win_x64\settings_sonarr.json
-        cp .\settings_sonarr.json.sample .\dist\win_x64\settings_sonarr4k.json
+        cp .\settings_4ksonarr.json.sample .\dist\win_x64\settings_4ksonarr.json
     
     - name: 'Upload Artifact'
       uses: actions/upload-artifact@v2
@@ -92,11 +92,11 @@ jobs:
         
     - name: Prepare
       run: |
-        cp ./settings_radarr.json.sample ./dist/linux_x64/settings_radarr.json
-        cp ./settings_radarr.json.sample ./dist/linux_x64/settings_radarr4k.json
-        cp ./settings_radarr.json.sample ./dist/linux_x64/settings_radarr3d.json
-        cp ./settings_sonarr.json.sample ./dist/linux_x64/settings_sonarr.json
-        cp ./settings_sonarr.json.sample ./dist/linux_x64/settings_sonarr4k.json
+        cp .\settings_radarr.json.sample .\dist\win_x64\settings_radarr.json
+        cp .\settings_4kradarr.json.sample .\dist\win_x64\settings_4kradarr.json
+        cp .\settings_3dradarr.json.sample .\dist\win_x64\settings_3dradarr.json
+        cp .\settings_sonarr.json.sample .\dist\win_x64\settings_sonarr.json
+        cp .\settings_4ksonarr.json.sample .\dist\win_x64\settings_4ksonarr.json
         
         zip -r ./dist/linux_x64.zip ./dist/linux_x64/
         zip -r ./dist/win_x64.zip ./dist/win_x64/
