@@ -13,7 +13,7 @@ namespace arr_scanner
         private static void Main(string[] args)
         {
 
-            Console.WriteLine("Sonarr Scanner starting...");
+            Console.WriteLine("arr Scanner starting...");
 
             Console.CancelKeyPress += delegate (object sender, ConsoleCancelEventArgs e) {
                 Exit();
