@@ -62,7 +62,7 @@ namespace arr_scanner
             this.name = name;
             Load();
             
-            URL = URL ?? (name == NAME_SONARR ? "http://localhost:8989" : "http://localhost:7878"); //may need work
+            URL = URL ?? ((name == NAME_SONARR  || name == NAME_4KSONARR) ? "http://localhost:8989" : "http://localhost:7878");
         }
 
 
