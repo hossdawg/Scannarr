@@ -1,5 +1,5 @@
 {
-  "URL": "http://localhost:8989",
+  "URL": "http://sonarr:8989",
   "Interval": 120,
   "ScanOnWake": true,
   "ScanOnInterval": false,
