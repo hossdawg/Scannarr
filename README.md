@@ -80,7 +80,7 @@ _All the interval properties are in minutes._
 If the setting **'ScanOnStart'** is **true**, and both **'ScanOnWake'** and **'ScanOnInterval'** are **false**, it will start, scan and exit the app, otherwise it will stay open.
 
 ## Running on Docker
-You can omit any arr instance and use only the ones you wish you wish.
+You can omit any arr instance and use only the ones you wish to use.
 ```sh
 docker run -it --rm \
 -v /path/to/settings_sonarr.json:/app/settings_sonarr.json:ro \
